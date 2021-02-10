@@ -356,12 +356,12 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 6010200B
-P 5550 1250
-F 0 "J2" H 5468 925 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 5468 1016 50  0000 C CNN
-F 2 "Connector_Wire:SolderWire-1.5sqmm_1x02_P6mm_D1.7mm_OD3mm" H 5550 1250 50  0001 C CNN
-F 3 "~" H 5550 1250 50  0001 C CNN
-	1    5550 1250
+P 5550 1200
+F 0 "J2" H 5468 875 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 5468 966 50  0000 C CNN
+F 2 "Connector_Wire:SolderWire-1.5sqmm_1x02_P6mm_D1.7mm_OD3mm" H 5550 1200 50  0001 C CNN
+F 3 "~" H 5550 1200 50  0001 C CNN
+	1    5550 1200
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -405,48 +405,35 @@ Wire Wire Line
 $Comp
 L power:LINE #PWR010
 U 1 1 6011A41C
-P 5800 1150
-F 0 "#PWR010" H 5800 1000 50  0001 C CNN
-F 1 "LINE" V 5815 1278 50  0000 L CNN
-F 2 "" H 5800 1150 50  0001 C CNN
-F 3 "" H 5800 1150 50  0001 C CNN
-	1    5800 1150
+P 5800 1100
+F 0 "#PWR010" H 5800 950 50  0001 C CNN
+F 1 "LINE" V 5815 1228 50  0000 L CNN
+F 2 "" H 5800 1100 50  0001 C CNN
+F 3 "" H 5800 1100 50  0001 C CNN
+	1    5800 1100
 	0    1    1    0   
 $EndComp
 $Comp
 L power:NEUT #PWR011
 U 1 1 6011ACAD
-P 5800 1250
-F 0 "#PWR011" H 5800 1100 50  0001 C CNN
-F 1 "NEUT" V 5815 1378 50  0000 L CNN
-F 2 "" H 5800 1250 50  0001 C CNN
-F 3 "" H 5800 1250 50  0001 C CNN
-	1    5800 1250
+P 5800 1200
+F 0 "#PWR011" H 5800 1050 50  0001 C CNN
+F 1 "NEUT" V 5815 1328 50  0000 L CNN
+F 2 "" H 5800 1200 50  0001 C CNN
+F 3 "" H 5800 1200 50  0001 C CNN
+	1    5800 1200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5800 1250 5750 1250
+	5800 1200 5750 1200
 Wire Wire Line
-	5750 1150 5800 1150
-$Comp
-L Connector:Screw_Terminal_01x02 J3
-U 1 1 60120A1E
-P 5550 1650
-F 0 "J3" H 5629 1550 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 5629 1641 50  0000 L CNN
-F 2 "Connector_Wire:SolderWire-1.5sqmm_1x02_P6mm_D1.7mm_OD3mm" H 5550 1650 50  0001 C CNN
-F 3 "~" H 5550 1650 50  0001 C CNN
-	1    5550 1650
-	-1   0    0    1   
-$EndComp
-Text GLabel 5800 1550 2    50   Input ~ 0
+	5750 1100 5800 1100
+Text GLabel 5800 1500 2    50   Input ~ 0
 VOUT_A
 Text GLabel 5800 1650 2    50   Input ~ 0
 VOUT_B
 Wire Wire Line
-	5750 1550 5800 1550
-Wire Wire Line
-	5750 1650 5800 1650
+	5750 1500 5800 1500
 $Comp
 L Device:D D3
 U 1 1 60191703
@@ -904,7 +891,7 @@ Connection ~ 6600 3150
 Wire Wire Line
 	6600 3150 6850 3150
 Wire Wire Line
-	5750 3350 5750 3750
+	5750 3350 5750 3450
 Wire Wire Line
 	5750 3750 6350 3750
 Wire Wire Line
@@ -1004,4 +991,34 @@ Wire Wire Line
 	6250 5250 6250 5450
 Connection ~ 7100 3650
 Connection ~ 7100 3150
+Wire Wire Line
+	5450 3450 5750 3450
+Connection ~ 5450 3450
+Connection ~ 5750 3450
+Wire Wire Line
+	5750 3450 5750 3750
+$Comp
+L Connector:Screw_Terminal_01x01 J3
+U 1 1 6029C73C
+P 5550 1500
+F 0 "J3" H 5468 1275 50  0000 C CNN
+F 1 "Screw_Terminal_01x01" H 5468 1366 50  0000 C CNN
+F 2 "Connector_Wire:SolderWire-1.5sqmm_1x01_D1.7mm_OD3mm" H 5550 1500 50  0001 C CNN
+F 3 "~" H 5550 1500 50  0001 C CNN
+	1    5550 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J5
+U 1 1 6029CF19
+P 5550 1650
+F 0 "J5" H 5629 1600 50  0000 L CNN
+F 1 "Screw_Terminal_01x01" H 5629 1691 50  0000 L CNN
+F 2 "Connector_Wire:SolderWire-1.5sqmm_1x01_D1.7mm_OD3mm" H 5550 1650 50  0001 C CNN
+F 3 "~" H 5550 1650 50  0001 C CNN
+	1    5550 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5800 1650 5750 1650
 $EndSCHEMATC
