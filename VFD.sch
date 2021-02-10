@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "VFD"
+Date "2021-02-10"
+Rev "1.0"
+Comp "Sean Olson"
 Comment1 ""
 Comment2 ""
 Comment3 ""
