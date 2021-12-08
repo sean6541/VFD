@@ -2104,15 +2104,7 @@ Wire Wire Line
 Wire Wire Line
 	8750 2050 9400 2050
 Wire Wire Line
-	9100 1150 8300 1150
-Connection ~ 9100 1150
-Connection ~ 8300 1150
-Wire Wire Line
 	9100 2700 9100 2450
-Wire Wire Line
-	9100 2700 8750 2700
-Connection ~ 9100 2700
-Connection ~ 8750 2700
 $Comp
 L Device:C_Small C37
 U 1 1 62C71680
@@ -2126,4 +2118,12 @@ F 5 "" H 8750 2200 50  0001 C CNN "LCSC"
 	1    8750 2200
 	1    0    0    1   
 $EndComp
+Connection ~ 8750 2700
+Connection ~ 9100 2700
+Wire Wire Line
+	9100 2700 8750 2700
+Connection ~ 8300 1150
+Connection ~ 9100 1150
+Wire Wire Line
+	9100 1150 8300 1150
 $EndSCHEMATC
